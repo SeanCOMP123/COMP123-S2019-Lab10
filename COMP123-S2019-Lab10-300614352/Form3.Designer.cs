@@ -1,6 +1,6 @@
 ﻿namespace COMP123_S2019_Lab10_300614352
 {
-    partial class MainForm
+    partial class EndForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,65 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.WelcomeToMainFormLabel = new System.Windows.Forms.Label();
-            this.NextButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // WelcomeToMainFormLabel
+            // BackButton
             // 
-            this.WelcomeToMainFormLabel.AutoSize = true;
-            this.WelcomeToMainFormLabel.Location = new System.Drawing.Point(256, 227);
-            this.WelcomeToMainFormLabel.Name = "WelcomeToMainFormLabel";
-            this.WelcomeToMainFormLabel.Size = new System.Drawing.Size(299, 31);
-            this.WelcomeToMainFormLabel.TabIndex = 0;
-            this.WelcomeToMainFormLabel.Text = "Welcome to Main Form!";
-            // 
-            // NextButton
-            // 
-            this.NextButton.Location = new System.Drawing.Point(642, 502);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(130, 47);
-            this.NextButton.TabIndex = 1;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.BackButton.Location = new System.Drawing.Point(668, 539);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(120, 49);
+            this.BackButton.TabIndex = 0;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(747, 12);
+            this.CloseButton.Location = new System.Drawing.Point(763, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(25, 35);
-            this.CloseButton.TabIndex = 2;
+            this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // MainForm
+            // EndForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ControlBox = false;
             this.Controls.Add(this.CloseButton);
-            this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.WelcomeToMainFormLabel);
+            this.Controls.Add(this.BackButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
-            this.Name = "MainForm";
+            this.Name = "EndForm";
+            this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main Form";
+            this.Text = "End Form";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label WelcomeToMainFormLabel;
-        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button CloseButton;
     }
 }
-
