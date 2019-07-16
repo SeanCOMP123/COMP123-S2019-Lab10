@@ -30,13 +30,18 @@
         {
             this.BackButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
+            this.ThisIsEndFormLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(668, 539);
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackButton.AutoSize = true;
+            this.BackButton.Location = new System.Drawing.Point(340, 532);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(120, 49);
+            this.BackButton.Size = new System.Drawing.Size(120, 56);
             this.BackButton.TabIndex = 0;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -44,21 +49,39 @@
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(763, 12);
+            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.Location = new System.Drawing.Point(731, 12);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(25, 35);
+            this.CloseButton.Size = new System.Drawing.Size(57, 56);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
+            // ThisIsEndFormLabel
+            // 
+            this.ThisIsEndFormLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ThisIsEndFormLabel.AutoSize = true;
+            this.ThisIsEndFormLabel.ForeColor = System.Drawing.Color.White;
+            this.ThisIsEndFormLabel.Location = new System.Drawing.Point(238, 269);
+            this.ThisIsEndFormLabel.Name = "ThisIsEndFormLabel";
+            this.ThisIsEndFormLabel.Size = new System.Drawing.Size(398, 46);
+            this.ThisIsEndFormLabel.TabIndex = 2;
+            this.ThisIsEndFormLabel.Text = "This is the End Form!";
+            // 
             // EndForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.ControlBox = false;
+            this.Controls.Add(this.ThisIsEndFormLabel);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.BackButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -66,10 +89,10 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.Name = "EndForm";
-            this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "End Form";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,5 +100,6 @@
 
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Label ThisIsEndFormLabel;
     }
 }

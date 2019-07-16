@@ -38,15 +38,19 @@
             this.WelcomeToMainFormLabel.AutoSize = true;
             this.WelcomeToMainFormLabel.Location = new System.Drawing.Point(256, 227);
             this.WelcomeToMainFormLabel.Name = "WelcomeToMainFormLabel";
-            this.WelcomeToMainFormLabel.Size = new System.Drawing.Size(299, 31);
+            this.WelcomeToMainFormLabel.Size = new System.Drawing.Size(445, 46);
             this.WelcomeToMainFormLabel.TabIndex = 0;
             this.WelcomeToMainFormLabel.Text = "Welcome to Main Form!";
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(642, 502);
+            this.NextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NextButton.AutoSize = true;
+            this.NextButton.Location = new System.Drawing.Point(335, 493);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(130, 47);
+            this.NextButton.Size = new System.Drawing.Size(130, 56);
             this.NextButton.TabIndex = 1;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -54,9 +58,13 @@
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(747, 12);
+            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.Location = new System.Drawing.Point(715, 12);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(25, 35);
+            this.CloseButton.Size = new System.Drawing.Size(57, 56);
             this.CloseButton.TabIndex = 2;
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = true;
@@ -64,7 +72,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 561);
